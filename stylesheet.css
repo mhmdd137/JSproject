@@ -1,0 +1,193 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('images/img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(255, 255, 255);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.choises {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 20px 0;
+}
+
+.choises h2 {
+    color: rgb(39, 39, 39);
+    font-size: 3rem;
+
+}
+
+.choises img {
+    background-color:#d5711f8a;
+    width: 90px;
+    height: 130px;
+}
+
+#result {
+    color: #756750;
+    font-size: 3rem;
+}
+
+.btn button,
+.ok button,
+.no button {
+    color: rgb(39, 39, 39);
+    background-color: #ac4d00b6;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.15s;
+    -webkit-transition: 0.15s;
+    -moz-transition: 0.15s;
+    -ms-transition: 0.15s;
+    -o-transition: 0.15s;    border-radius: 20px;
+
+}
+
+.ok,
+.no {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: calc(50% - 200px);
+    top: calc(50% - 100px);
+    width: 400px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card1,
+.card2 {
+    background-color: #b38661d6;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    left: calc(50% - 250px);
+    top: -100%;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+
+#hcard {
+    margin: 15px 0 15px 0;
+    background-color: #3fb6e2;
+    border-radius: 50px;
+
+}
+
+.shakecomputer {
+    animation: shakecomp 0.8s linear;
+}
+
+.shakeplayer {
+    animation: shakeuser 0.8s linear;
+}
+
+
+@keyframes shakecomp {
+    0% {
+        transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+    }
+
+    75% {
+        transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+}
+
+@keyframes shakeuser {
+    0% {
+        transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+    }
+
+    25% {
+        transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+    }
+
+    75% {
+        transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        -moz-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+        -o-transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

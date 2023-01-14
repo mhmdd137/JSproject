@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock, paper, scissors</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <br><div class="btn">
+        <button id="rock">rock✊</button>
+        <button id="paper">paper✋</button>
+        <button id="scissors">scissors✌</button>
+    </div>
+    <div class="choises">
+        <h2>Computer </h2>
+        <img id="computer-Choice" src="images/rock.png"></img>
+        <h1 id="result"></h1>
+        <img id="user-Choice" src="images/rock.png"></img>
+        <h2>You</h2>
+        <h2 id="score">computer <span class="computerscore">0</span>/<span class="playerscore">0</span> player</h2>
+    </div>
+
+    <div class="container">
+        <div class="card1" id="card1">
+            <div class="ok">
+                <h2 id="hcard">you are the winner</h2>
+                <button id="again" class="again" onclick="clicedagainwin()">Again</button>
+            </div>
+        </div>
+        <div class="card2" id="card2">
+            <div class="no">
+                <h2 id="hcard">you are the loser</h2>
+                <button id="again" class="again" onclick="clicedagainlos()">Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
